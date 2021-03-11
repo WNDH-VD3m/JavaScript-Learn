@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo18</title>
+</head>
+<body>
+
+<p>点击下面的按钮来显示今天是周几：</p>
+
+<button onclick="myFunction()">
+点击这里
+</button>
+
+<p id="demo18"></p>
+
+<script>
+
+   function myFunction(){
+       var x;
+       var d = new Date().getDay();
+       switch (d) {
+           case 0:x="Sunday";
+           break;
+
+           case 1:x="Monday";
+           break;
+
+           case 2:x="Tuesday";
+           break;
+
+           case 3:x="Wednesday";
+           break;
+
+           case 4:x="Thursday";
+           break;
+
+           case 5:x="Friday";
+           break;
+
+           case 6:x="Saturday";
+           break;
+       }
+
+       document.getElementById("demo18").innerHTML=x;
+
+    }
+
+</script>
+
+
+
+
+
+</body>
+</html>
