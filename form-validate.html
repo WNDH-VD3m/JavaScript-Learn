@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form-Validate</title>
+
+
+    <script>
+        
+        
+        function myFunction() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == null || x == ""){
+                alert("需要名字");
+                return false;
+            }
+        }
+    </script>
+
+
+
+
+
+</head>
+<body>
+
+
+<form name="myForm" ction="demo_form.php" onsubmit="return myFunction()" method="post">
+
+    名字: <input type="text" name="fname">
+
+
+    <input type="submit" value="提交">
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
